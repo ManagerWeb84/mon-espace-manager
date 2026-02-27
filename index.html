@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo-affiche" id="promoAffiche">
+
+    <button class="close-btn" onclick="fermerAffiche()">×</button>
+
+    <a href="pageactualier.html">
+        <img src="documents/affiche-prevention.png" alt="Affiche prévention">
+    </a>
+
+</div>
+    <div class="overlay">
+        <h1 class="fade-in">Mon espace Manager</h1>
+
+        <div class="buttons fade-in delay">
+            <a href="page1.html" class="btn secondary">Mes documents</a>
+            <a href="page2.html" class="btn secondary">Nous Contacter</a>
+        </div>
+    </div>
+<script>
+function fermerAffiche(){
+    document.getElementById("promoAffiche").style.display = "none";
+}
+</script>
+</body>
+</html>
